@@ -206,7 +206,13 @@ export default function Home() {
   );
 }
 
-function FeatureCard({ icon, title, description }) {
+interface FeatureCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
     <div className="p-8 border rounded-xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1 bg-white">
       <div className="mb-4">{icon}</div>
@@ -216,7 +222,12 @@ function FeatureCard({ icon, title, description }) {
   );
 }
 
-function BenefitCard({ title, icon }) {
+interface BenefitCardProps {
+  title: string;
+  icon: React.ReactNode;
+}
+
+function BenefitCard({ title, icon }: BenefitCardProps) {
   return (
     <div className="p-6 border rounded-xl bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
       <div className="flex items-center gap-3">
