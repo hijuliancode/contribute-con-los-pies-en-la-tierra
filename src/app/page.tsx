@@ -26,7 +26,7 @@ export default function Home() {
             <div className="overflow-hidden w-48 h-48 bg-white/10 rounded-full backdrop-blur-sm flex items-center justify-center border-2 border-white/20">
               <span className="text-white text-sm text-center px-4">Logo Con Los Pies En La Tierra</span>
               <Image
-                src="/images/logo-1000x1000.png"
+                src="/images/logo-con-los-pies-en-la-tierra.png"
                 alt="Fútbol background"
                 fill
                 className="object-cover"
@@ -142,53 +142,53 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-4">Nuestros Patrocinadores</h2>
             <p className="text-gray-600 text-center mb-12">Orgullosos de contar con el apoyo de marcas que confían en el desarrollo deportivo</p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Sponsor Card 1 */}
               <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-500 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-                <div className="relative p-6 bg-white rounded-lg shadow-md transform hover:-translate-y-1 transition-all">
-                  <div className="aspect-[4/3] relative mb-4">
-                    <Image
-                      src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=800&auto=format&fit=crop&q=60"
-                      alt="Sponsor 1"
-                      fill
-                      className="object-contain"
-                    />
+                <div className="relative p-2 bg-white rounded-lg shadow-md transform hover:-translate-y-1 transition-all">
+                  <div className="aspect-[4/3] relative">
+                    <a href="https://www.elevationsports.app/es" target="_blank">
+                      <Image
+                        src="/images/logos/elevation-sports-logo.png"
+                        alt="Sponsor 1"
+                        fill
+                        className="object-contain"
+                      />
+                    </a>
                   </div>
-                  <h3 className="text-lg font-semibold text-center">Patrocinador Platinum</h3>
                 </div>
               </div>
 
               {/* Sponsor Card 2 */}
               <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-500 rounded-lg transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
-                <div className="relative p-6 bg-white rounded-lg shadow-md transform hover:-translate-y-1 transition-all">
-                  <div className="aspect-[4/3] relative mb-4">
-                    <Image
-                      src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=800&auto=format&fit=crop&q=60"
-                      alt="Sponsor 2"
-                      fill
-                      className="object-contain"
-                    />
+                <div className="relative p-2 bg-white rounded-lg shadow-md transform hover:-translate-y-1 transition-all">
+                  <div className="aspect-[4/3] relative">
+                    <a href="https://www.kunnat.co/" target="_blank">
+                      <Image
+                        src="/images/logos/kunnat-logo.png"
+                        alt="Sponsor 2"
+                        fill
+                        className="object-contain"
+                      />
+                    </a>
                   </div>
-                  <h3 className="text-lg font-semibold text-center">Patrocinador Gold</h3>
                 </div>
               </div>
 
               {/* Sponsor Card 3 */}
               <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-500 rounded-lg transform rotate-1 group-hover:rotate-2 transition-transform"></div>
-                <div className="relative p-6 bg-white rounded-lg shadow-md transform hover:-translate-y-1 transition-all">
-                  <div className="aspect-[4/3] relative mb-4">
-                    <Image
-                      src="https://images.unsplash.com/photo-1563302111-eab4b145e6c9?w=800&auto=format&fit=crop&q=60"
-                      alt="Sponsor 3"
-                      fill
-                      className="object-contain"
-                    />
+                <div className="relative p-2 bg-white rounded-lg shadow-md transform hover:-translate-y-1 transition-all">
+                  <div className="aspect-[4/3] relative">
+                    <a href="https://inred.com.co/" target="_blank">
+                      <Image
+                        src="/images/logos/inred-logo.png"
+                        alt="Sponsor 3"
+                        fill
+                        className="object-contain"
+                      />
+                    </a>
                   </div>
-                  <h3 className="text-lg font-semibold text-center">Patrocinador Silver</h3>
                 </div>
               </div>
             </div>
