@@ -1,13 +1,18 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin, Phone, Mail, Bus, Trophy, Users, Shirt, Droplet, Coffee, Bus as BusIcon, MessageCircle, Award, ArrowRight } from "lucide-react";
+import { Calendar, MapPin, Phone, Mail, Bus, Trophy, Users, Shirt, Droplet, Coffee, Bus as BusIcon, MessageCircle, Award, ArrowRight, WheatIcon, MessageCircleIcon, MessageCircleMoreIcon, FacebookIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      {/* Floating whatsapp button */}
+      <a href="https://wa.me/573105878681?text=Hola%20te%20escribo%20desde%20conlospiesenlatierra.com%20..." title="Escribenos a whatsapp" className="fixed bottom-8 right-8 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-transform hover:scale-105" target="_blank">
+        <MessageCircleMoreIcon className="w-6 h-6" />
+      </a>
+
       {/* Hero Section */}
       <div className="relative h-screen">
         <div className="absolute inset-0">
@@ -107,6 +112,12 @@ export default function Home() {
               <MapPin className="w-5 h-5 text-red-600" />
               <span>Sibaté, Cundinamarca</span>
             </div>
+            {/* add facebook link with icon */}
+            <div className="flex items-center gap-2 bg-gray-50 px-6 py-3 rounded-full shadow-sm">
+              <FacebookIcon className="w-5 h-5 text-red-600" />
+              <span><a href="https://www.facebook.com/grantorneociudadverde" target="_blank">Con Los Pies En La Tierra en facebook</a></span>
+            </div>
+
           </div>
         </div>
       </section>
@@ -198,6 +209,14 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-6">
+        {/* Social Media Links */}
+        <div className="container mx-auto px-4 text-center mb-2">
+          <div className="flex items-center justify-center gap-4">
+            <a href="https://www.facebook.com/grantorneociudadverde" target="_blank" title="Instagram">
+              <FacebookIcon className="w-6 h-6" />
+            </a>
+          </div>
+        </div>
         <div className="container mx-auto px-4 text-center">
           <p>Página hecha por <a href="https://elevationsports.app" className="text-red-500 hover:text-red-400 transition-colors">elevationsports.app</a></p>
         </div>
