@@ -1,5 +1,6 @@
 "use client";
 
+import CountdownCamp from "@/components/cowntdown-camp";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Phone, Mail, Bus, Trophy, Users, Shirt, Droplet, Coffee, Bus as BusIcon, MessageCircle, Award, ArrowRight, WheatIcon, MessageCircleIcon, MessageCircleMoreIcon, FacebookIcon } from "lucide-react";
 import Image from "next/image";
@@ -43,10 +44,10 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300">
             Primer Campamento Deportivo
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">Sibaté, Cundinamarca</p>
+          <p className="text-xl md:text-2xl mb-8 text-gray-200">Centro Recreativo Los Sauces, Sibaté, Cundinamarca</p>
           <div className="flex items-center gap-4 text-lg mb-8 bg-black/30 px-6 py-3 rounded-full backdrop-blur-sm">
             <Calendar className="w-6 h-6" />
-            <span>26 - 28 Noviembre 2024</span>
+            <span>Del 26 al 28 de Noviembre 2024</span>
           </div>
           <Button size="lg" className="bg-red-600 hover:bg-red-700 text-lg px-8 py-6 rounded-full transition-transform hover:scale-105 mb-3">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoLm5EARuZ1l-vdc-C7_QFb3Udci2rasa2MLVJDwWBleZKsg/viewform?usp=sf_link" target="_blank" title="Inscribete ahora">
@@ -59,6 +60,13 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
+      {/* Countdown Section */}
+      <section className="py-0 bg-white">
+        <div className="container mx-auto px-4">
+          <CountdownCamp />
+        </div>
+      </section>
 
       {/* Features Section */}
       <section className="py-20 pb-10 bg-gradient-to-b from-white to-gray-50">
@@ -120,6 +128,31 @@ export default function Home() {
 
           </div>
         </div>
+      </section>
+
+      {/* Location Section */}
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12">Ubicación</h2>
+          <p className="text-center text-gray-600 mb-12">Centro Recreativo Los Sauces, Sibaté, Cundinamarca</p>
+          {/* Map Container */}
+          <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.3050593605208!2d-74.24509992523575!3d4.524046995450391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f0aecdca910e7%3A0x66e3f66ab492f1a3!2sCentro%20Recreativo%20Los%20Sauces!5e1!3m2!1ses-419!2sco!4v1730993066425!5m2!1ses-419!2sco"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+          </div>
+        </div>
+        <p>
+          <a href="https://goo.gl/maps/6Q4Z5Y2K2Q7t7JZz6" target="_blank" className="block text-center mt-4 text-red-600 hover:text-red-500 transition-colors">
+            Ver en Google Maps <ArrowRight className="w-4 h-4 inline-block" />
+          </a>
+        </p>
       </section>
 
       {/* Santa Marta Preview Section */}
